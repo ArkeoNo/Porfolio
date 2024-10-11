@@ -1,0 +1,107 @@
+header{
+    font-family: 'Afacad Flux', sans-serif;
+    display: flex;
+    justify-content: left;
+    padding: 0% 2%;
+    align-items: center;
+    gap: 3%;
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+footer{
+    font-family: 'Afacad Flux', sans-serif;
+    color: rgb(54, 54, 54);
+    display: flex;
+    justify-content: center;
+    padding: 2px 2%;
+    align-items: center;
+    gap: 3%;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.logo{
+    height: 50px;
+    width: auto;
+}
+
+.title{
+    padding: 5% 2%;
+    font-family: "Gayathri", sans-serif;
+}
+
+.title h1{
+    margin-top: 1vh;
+    font-size: 12vh;
+    color: black;
+    font-family: "Gayathri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.title h2{
+    font-size: 2vh;
+    color: rgb(95, 95, 95);
+    font-style: normal;
+    margin-top: 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 1% 2%;
+    width: 45%;
+    transition: transform 0.2s;
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+.card:first-child {
+    font-size: 1.8vh;
+    width: 30%; /* First card takes 30% of the width */
+    background-image: url("imgs/pfp.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 50vh;
+}
+
+.card:last-child {
+    width: 55%; /* Second card takes the remaining 65% of the width */
+    height: 50vh;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
